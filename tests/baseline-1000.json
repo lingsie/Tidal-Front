@@ -1,0 +1,69 @@
+{
+  "ruleset": 28,
+  "targetWinRate": 60,
+  "requested": 1000,
+  "validBattles": 1000,
+  "invalidLayouts": 0,
+  "invalidSeedExamples": [],
+  "attackerWinRate": 59.8,
+  "avgSeconds": 122.7,
+  "hqSurvivalRate": 40.2,
+  "unitDeaths": {
+    "rifle": 9710,
+    "heavy": 7089,
+    "rocket": 7001,
+    "tank": 1529,
+    "medic": 697
+  },
+  "unitDeathRatePercent": {
+    "rifle": 88.9,
+    "heavy": 95.8,
+    "rocket": 83.9,
+    "tank": 65.8,
+    "medic": 12.3
+  },
+  "defenseKills": {
+    "sniper": 10582,
+    "mg": 2969,
+    "mortar": 1120,
+    "cannon": 10106,
+    "missile": 530,
+    "rocket": 719
+  },
+  "avgReward": {
+    "gold": 1327,
+    "wood": 1101,
+    "steel": 879
+  },
+  "unreachable": 0,
+  "timeouts": 5,
+  "unresolved": [],
+  "abnormalSeeds": [],
+  "replayMismatches": [],
+  "playerDefenseWinRate": 100,
+  "npcRaidWinRate": 0,
+  "levels": [
+    {"level": 1, "wins": 74, "played": 100},
+    {"level": 2, "wins": 40, "played": 100},
+    {"level": 3, "wins": 95, "played": 100},
+    {"level": 4, "wins": 67, "played": 100},
+    {"level": 5, "wins": 94, "played": 100},
+    {"level": 6, "wins": 66, "played": 100},
+    {"level": 7, "wins": 59, "played": 100},
+    {"level": 8, "wins": 47, "played": 100},
+    {"level": 9, "wins": 35, "played": 100},
+    {"level": 10, "wins": 21, "played": 100}
+  ],
+  "periods": [
+    {"name": "morning", "wins": 185, "played": 250},
+    {"name": "noon", "wins": 77, "played": 250},
+    {"name": "afternoon", "wins": 172, "played": 250},
+    {"name": "night", "wins": 164, "played": 250}
+  ],
+  "tactics": [
+    {"name": "balanced", "wins": 157, "played": 252},
+    {"name": "heavy-rocket", "wins": 129, "played": 252},
+    {"name": "rifle-rush", "wins": 164, "played": 248},
+    {"name": "tank-medic", "wins": 148, "played": 248}
+  ]
+}
