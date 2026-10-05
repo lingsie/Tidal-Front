@@ -1,0 +1,18 @@
+{
+  "name": "tidal-front",
+  "private": true,
+  "description": "Offline WebGL2 island base-building and NPC combat game",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lingsie/Tidal-Front.git"
+  },
+  "scripts": {
+    "test": "node tests/integrity.mjs && node tests/smoke.mjs && node tests/launchers.mjs && node tests/weapons.mjs && node tests/preview-levels.mjs && node tests/release-0684.mjs && node tests/release-0685.mjs",
+    "test:audio": "node tests/audio.mjs",
+    "test:simulate": "node tests/simulate.mjs"
+  }
+}

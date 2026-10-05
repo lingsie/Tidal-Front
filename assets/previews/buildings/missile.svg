@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-label="Anti-tank missile rack preview">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#80d6e4"/><stop offset="1" stop-color="#e8f2d4"/></linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4f7d7d"/><stop offset="1" stop-color="#18373d"/></linearGradient>
+    <linearGradient id="missile" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#68736d"/><stop offset=".55" stop-color="#d5d2b6"/><stop offset="1" stop-color="#f1ad36"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#17343b" flood-opacity=".34"/></filter>
+  </defs>
+  <rect width="720" height="480" fill="url(#sky)"/>
+  <path d="M0 330 C120 300 220 348 360 319 C500 290 602 324 720 300 L720 480 L0 480Z" fill="#54a956"/>
+  <ellipse cx="360" cy="397" rx="210" ry="43" fill="#244b43" opacity=".28"/>
+  <g filter="url(#shadow)">
+    <path d="M205 355 L235 310 L485 310 L517 355 L484 395 L235 395Z" fill="#717b69" stroke="#273b39" stroke-width="8"/>
+    <path d="M236 333 L266 290 L454 290 L484 333 L455 358 L265 358Z" fill="#39808c" stroke="#203f42" stroke-width="8"/>
+    <ellipse cx="360" cy="292" rx="82" ry="29" fill="#17383e"/>
+    <rect x="344" y="220" width="32" height="78" rx="12" fill="#d0c896" stroke="#273d3d" stroke-width="7"/>
+    <path d="M259 249 L289 197 L431 197 L461 249 L436 275 L284 275Z" fill="#23464b" stroke="#172f34" stroke-width="8"/>
+    <g transform="rotate(-28 360 225)">
+      <rect x="234" y="200" width="252" height="16" rx="8" fill="#172d31"/>
+      <rect x="234" y="242" width="252" height="16" rx="8" fill="#172d31"/>
+      <g>
+        <rect x="250" y="177" width="225" height="34" rx="17" fill="url(#missile)" stroke="#263b3b" stroke-width="6"/>
+        <path d="M474 177 L521 194 L474 211Z" fill="#efa83d" stroke="#263b3b" stroke-width="6"/>
+        <path d="M268 174 L241 156 L274 178 M268 214 L241 232 L274 208" fill="#273b3d" stroke="#273b3d" stroke-width="8" stroke-linejoin="round"/>
+        <rect x="329" y="176" width="20" height="36" fill="#ed9a31"/>
+      </g>
+      <g transform="translate(0 43)">
+        <rect x="250" y="177" width="225" height="34" rx="17" fill="url(#missile)" stroke="#263b3b" stroke-width="6"/>
+        <path d="M474 177 L521 194 L474 211Z" fill="#efa83d" stroke="#263b3b" stroke-width="6"/>
+        <path d="M268 174 L241 156 L274 178 M268 214 L241 232 L274 208" fill="#273b3d" stroke="#273b3d" stroke-width="8" stroke-linejoin="round"/>
+        <rect x="329" y="176" width="20" height="36" fill="#ed9a31"/>
+      </g>
+    </g>
+    <path d="M287 292 L322 238 M433 292 L398 238" fill="none" stroke="#c3aa55" stroke-width="13" stroke-linecap="round"/>
+    <rect x="449" y="238" width="61" height="55" rx="9" fill="#293d3d" stroke="#172e31" stroke-width="7"/>
+    <circle cx="480" cy="256" r="13" fill="#8bd9dc" stroke="#132b2f" stroke-width="6"/>
+    <circle cx="480" cy="256" r="5" fill="#e9fbdf"/>
+    <g fill="#e2bd55" stroke="#293b38" stroke-width="4"><circle cx="239" cy="351" r="9"/><circle cx="481" cy="351" r="9"/><circle cx="280" cy="379" r="9"/><circle cx="440" cy="379" r="9"/></g>
+  </g>
+</svg>
