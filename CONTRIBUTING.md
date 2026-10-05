@@ -1,27 +1,29 @@
-# 参与潮汐前线开发
+# Contributing to Tidal Front
 
-## 本机运行
+**English** · [简体中文](CONTRIBUTING.zh-CN.md) · [日本語](CONTRIBUTING.ja.md)
 
-按 [README.md](README.md#启动与保存) 克隆源码并执行 `./install.sh`。需要 Linux、Bash、g++（C++17）和支持 WebGL2 / Ogg 的浏览器。默认地址为 `http://127.0.0.1:8787`，用 Ctrl+C 停止。
+## Run locally
 
-开发验证使用 Node.js 22 或更新版本；项目没有 npm 包依赖。`npm test` 运行规则、UI / WebGL 调用、武器、等级图片和版本回归检查。
+Follow the [installation instructions](README.md#installation), clone the source and run `./install.sh`. You need Linux, Bash, g++ with C++17 support, and a browser with WebGL2 / Ogg support. The default address is `http://127.0.0.1:8787`; stop the server with Ctrl+C.
+
+Use Node.js 22 or newer for development checks. There are no npm package dependencies. Run the existing rule, UI / WebGL, weapon, level-image and release regression checks with:
 
 ```bash
 npm test
 ```
 
-音频相关改动还应使用 FFmpeg / ffprobe 运行 `npm run test:audio`。经济、战斗或 NPC 规则改动可用 `npm run test:simulate -- 1000` 检查批量模拟结果。最后在实际浏览器中检查涉及的交互、画面或声音；轻量 DOM / WebGL 测试不会替代真实浏览器验证。
+For audio changes, install FFmpeg / ffprobe and run `npm run test:audio`. For economy, combat or NPC rule changes, use `npm run test:simulate -- 1000` to inspect batch results. Also check affected interactions, visuals and sound in a real browser; the lightweight DOM / WebGL checks do not replace browser verification.
 
-## 修改约定
+## Change conventions
 
-- 游戏规则和存档迁移主要位于 `src/core.js`；界面和输入位于 `src/main.js`，渲染位于 `src/render.js`，语言处理位于 `src/i18n.js`。
-- 调整战斗规则时检查历史战报是否仍按原规则回放；涉及存档格式时验证旧档迁移，避免丢失资源或部队。
-- 新增界面文案时检查中文、英文、日文；新增等级图时保持独立 PNG、透明通道及 `src/previews.js` 中的路径一致。
-- 新增或替换音乐、音效和图片时维护来源及署名；现有音乐说明位于 `CREDITS.md`。
-- 编译产物 `tidal-front-server`、ZIP、日志和缓存留在本机。提交源码和游戏需要的原始资源。
+- Game rules and save migrations are mainly in `src/core.js`; UI and input are in `src/main.js`, rendering in `src/render.js`, and language handling in `src/i18n.js`.
+- When changing combat rules, check that historical battle reports still replay under their original rules. When changing saves, verify migration from older formats and preservation of resources and troops.
+- Check new UI text in English, Simplified Chinese and Japanese. New level thumbnails should remain distinct PNGs with alpha transparency, matching the paths in `src/previews.js`.
+- Maintain source and attribution notes when adding or replacing music, sound effects or images. Existing music credits are in `CREDITS.md`.
+- Keep the compiled `tidal-front-server`, ZIP files, logs and caches local. Commit source files and the original assets required to play.
 
-## 反馈问题或提交修改
+## Report a problem or submit a change
 
-在 [GitHub Issues](https://github.com/lingsie/Tidal-Front/issues) 中附上游戏版本、操作系统、浏览器版本、复现步骤，以及实际结果和预期结果。涉及画面或声音时，截图或短视频有助于定位。
+In [GitHub Issues](https://github.com/lingsie/Tidal-Front/issues), include the game version, operating system, browser version, steps to reproduce, actual result and expected result. Screenshots or short videos help with visual or audio problems.
 
-Pull request 说明修改解决了什么问题、涉及哪些行为，以及做过哪些验证。按改动范围补充有意义的现有检查，无需为文案改动新增测试。
+Describe the problem your pull request fixes, the behavior it changes and the checks you ran. Use meaningful existing checks for the affected area; prose-only changes do not need new tests.
